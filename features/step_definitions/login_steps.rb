@@ -1,7 +1,10 @@
 Dado('que acesso a página principal') do
-    pending # Write code here that turns the phrase above into concrete actions
+    visit "http://rocklov-web:3000"
   end
   
-  Quando('submeto minhas credenciais {string} e {string}') do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+  Quando('submeto minhas credenciais com {string} e {string}') do |email, password|
+    find("input[placeholder='Seu e-email']").set email
+    find("input[type=password]").set password
+
+    click_button "Entrar"
   end
