@@ -1,4 +1,4 @@
-#Language: pt
+#language: pt
 
 Funcionalidade: Cadastro de Anúncios
 
