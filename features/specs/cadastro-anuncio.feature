@@ -8,8 +8,9 @@ Funcionalidade: Cadastro de Anúncios
 
     Cenário: Novo equipamento
 
-        Dado que eu tenho o seguinte equipamento
-
+        Dado que eu estou logado como "goutemberg@icloud.com" e "123456"
+        E que acesso o formulario de cadastro de anúncios
+        E que eu tenho o seguinte equipamento:
             | thumb     | fender-sb.jpg |
             | nome      | Fender Strato |
             | categoria | Cordas        |
