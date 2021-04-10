@@ -1,7 +1,7 @@
 require 'mongo'
 
 Dado('que acesso a página de cadastro') do
-  visit "http://rocklov-web:3000/signup"
+  visit "/signup"
 end
 
 Quando('submeto o seguinte formulário de cadastro:') do |table|
