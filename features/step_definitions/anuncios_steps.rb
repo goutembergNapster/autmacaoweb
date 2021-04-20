@@ -1,10 +1,8 @@
 Dado('que eu estou logado como {string} e {string}') do |email, password|
 
-    visit "http://rocklov-web:3000/"
-    find("input[placeholder='Seu e-email']").set email
-    find("input[type=password]").set password
-
-    click_button "Entrar"
+    login_page = LoginPage.new
+    login_page.open
+    login_page.with(email, password)
     
 end
   
